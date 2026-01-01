@@ -1,0 +1,121 @@
+
+h1{
+	margin: 20px;
+	padding: 10px;	
+}
+
+
+table{
+	background-color:#eee;
+	margin: 20px auto;
+	padding:10px;
+	width:700px;
+	border-radius:12px;
+	border:1px solid blue;
+	border-collapse:collapse;
+}
+
+table tr{
+	height:36px;
+}
+
+table th{
+	text-align:left;
+	width:30%;
+	border-radius:4px;
+	background-color:#999;	
+}
+
+table th:last-of-type(){
+	width:10%;
+}
+
+table td{
+	border:1px solid #bbb;
+}
+
+table tr:nth-of-type(even){
+	background-color:#ddd;
+}
+
+button{
+	width:340px;
+	margin: 20px;
+	margin-top:0;
+	padding: 10px;
+	background-color:#ffa;
+	border-radius:5px;
+	border:1px solid #777;
+	font-weight:bold;
+	font-size:12pt;
+	cursor:pointer;
+}
+
+
+body{
+	position: relative;
+	z-index: -11;
+}
+
+body > .container{
+	z-index: -10;
+	position: relative;
+}
+
+#cardContainer{
+	position: relative;
+	z-index: 4;
+}
+
+
+.user_card::after{
+	pointer-events: none;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 100%;
+	height: 200px;
+	top: 0;
+	background: #f9f9f9;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	z-index: 0;
+}
+
+.card .user_photo {
+  position: relative;
+  background: #fff;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 10px solid rgba(0,0,0,.25);
+  z-index: 1;
+}
+
+.horizontal_center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vertical_center {
+  position: relative;
+  left: -12%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card .user_photo img {
+  width: 150px;
+  border-radius: 50%;
+  border: 0px;
+}
+
+.card {
+
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
